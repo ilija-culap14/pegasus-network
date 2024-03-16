@@ -6,4 +6,4 @@
 cd /etc/ssh/ && ssh-keygen -A
 
 # Start SSHD
-/usr/sbin/sshd -D -f /etc/ssh/sshd_config
+/usr/sbin/sshd -D -f /etc/ssh/sshd_config -o "AllowTcpForwarding yes"
